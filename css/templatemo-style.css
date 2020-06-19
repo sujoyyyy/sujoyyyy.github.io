@@ -32,6 +32,7 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
+  margin-top: auto
 }
 @viewport {
   width: device-width ;
