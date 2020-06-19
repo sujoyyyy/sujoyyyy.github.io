@@ -16,7 +16,11 @@ light-gray: #999999;
 text-gray: #6b6b6b;
 
 */
-
+#banner
+{
+   width: 100%;
+   margin-top: 0.2em;
+}
 html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
