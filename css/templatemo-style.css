@@ -16,11 +16,7 @@ light-gray: #999999;
 text-gray: #6b6b6b;
 
 */
-#banner
-{
-   width: 100%;
-   margin-top: 0.2em;
-}
+
 html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
@@ -32,12 +28,9 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
-  margin-top: auto
+  
 }
-@viewport {
-  width: device-width ;
-  zoom: 1.0 ;
-}
+
 a,
 button {
   transition: all 0.3s ease;
