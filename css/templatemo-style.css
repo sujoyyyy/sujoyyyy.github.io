@@ -29,7 +29,10 @@ body {
   color: #6b6b6b;
   overflow-x: hidden;
 }
-
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 a,
 button {
   transition: all 0.3s ease;
