@@ -72,7 +72,7 @@ a:hover {
   Welcome section
 */
 #tmWelcome {
-  position: relative;
+  position: absolute;
   display: flex;
   align-items: center;
 }
@@ -343,20 +343,4 @@ p {
   }
 }
 
-@Media ( max-width: 425px ){
-.site-header{
-background-image: url("url_of_your_mobile_version_image") !important;
-max-height: 150px !important;
-background-position: 49% 0px !important;
-}
-}
 
-.site-header{
-font-size:15px !important;
-}
-
-.widget-title{
-
-font-size:25px !important;
-
-}
