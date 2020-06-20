@@ -360,9 +360,3 @@ font-size:15px !important;
 font-size:25px !important;
 
 }
-@media ( max-width: 979px ) {
-.x-content-band.bg-image {
-    background-size: 100% auto !important;
-    background-position: top center !important;
-}
-}
