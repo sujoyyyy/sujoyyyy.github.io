@@ -28,7 +28,6 @@ body {
   font-weight: 400;
   color: #6b6b6b;
   overflow-x: hidden;
-  
 }
 
 a,
@@ -72,7 +71,7 @@ a:hover {
   Welcome section
 */
 #tmWelcome {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -342,5 +341,3 @@ p {
     padding: 25px;
   }
 }
-
-
