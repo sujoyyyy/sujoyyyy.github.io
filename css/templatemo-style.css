@@ -1,10 +1,4 @@
-/*
 
-OneTel Template
-
-http://www.templatemo.com/tm-468-onetel
-
-*/
 a:hover {
   color: white;
 }
@@ -15,7 +9,11 @@ body
 		font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 	}
-
+  @media (max-width:629px) {
+    img {
+      display: none;
+    }
+  }
 @media (min-width: 768px) {
   .container {
     width: 700px;
@@ -60,7 +58,7 @@ img {
 .btn {
   background: transparent;
   border: 2px solid #fff;
-  border-radius: 0px;
+  border-radius: 0.2px;
   box-shadow: none;
   color: #fff;
   padding: 12px 18px;

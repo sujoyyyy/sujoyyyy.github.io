@@ -35,6 +35,14 @@ img:last-of-type:hover{
 -moz-box-shadow:    0px 0px 30px 0px rgba(8, 232, 0, 0.952);
 box-shadow:         0px 0px 30px 0px rgba(8, 232, 0, 0.952);
 }
+
+.zoom{
+	transition: 0.4s;
+}
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 </style>
 </head>
 <body>
@@ -44,62 +52,53 @@ box-shadow:         0px 0px 30px 0px rgba(8, 232, 0, 0.952);
 
 
 <!-- home section -->
-<div id="home">
+<div id="home" style="margin-bottom: 0;">
 	<div class="container">
 		<div class="row">
 			
-			
-				<h1>Hey, I'm Sujoy 👋 &nbsp;<br><br></h1>
+				<h1>👋</h1><br>
+				<h1 style="font-size: 44px;margin: 0.1cm;">Hey, I'm Sujoy &nbsp;<br><br></h1>
 				
-				<p> In addition to my specialized knowledge of computer science, I have an appreciation for the breadth of this field and the nearly endless possibilities for further study. Optimizing the efficiency of algorithm analysis, and looking into computational algebra are some topics I wish to indulge my dedication into. </p>
-				
+				<p style="font-size: 18px; margin: 0.2cm;"> In addition to my specialized knowledge of computer science, I have an appreciation for the breadth of this field and the nearly endless possibilities for further study. Optimizing the efficiency of algorithm analysis, and looking into computational algebra are some topics I wish to indulge my dedication into.<br><br>
+				<a href="www.github.com/sujoyyyy">Github</a>&nbsp;•&nbsp;<a href="https://www.linkedin.com/in/sujoy-datta-2769441a0/">LinkedIn</a>&nbsp;•&nbsp;<a href="https://www.reddit.com/user/sujoyyyy">Reddit</a>&nbsp;•&nbsp<a href="https://drive.google.com/file/d/1TJZC1L6NXxoIBSGbZ3FaZyWGL5u8q8IC/view?usp=sharing">Resume</a></p> 
 		</div>
 	</div>
 </div>
 
-<!-- divider section -->
-<div class="divider">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4 col-sm-6">
-				<div class="divider-wrapper divider-one">
-					<i class="fa fa-laptop"></i>
-					<h2><a style="color: white;" href="https://www.linkedin.com/in/sujoy-datta-2769441a0/" target="_blank">Linkedin</a></h2>
-					
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-6">
-				<div class="divider-wrapper divider-two">
-					<i class="fa fa-mobile"></i>
-					<h2><a style="color: white;" href="https://www.instagram.com/sujoy.yyy/" target="_blank">Instagram</a></h2>
-					
-				</div>
-			</div>
-			<div class="col-md-4 col-sm-12">
-				<div class="divider-wrapper divider-three">
-					<i class="fa fa-life-ring"></i>
-					<h2><a style="color: white;" href="https://github.com/sujoyyyy" target="_blank">Github</a></h2>
-					
-				</div>
-			</div>
-			
-		</div>
-	</div>
-</div>
+
 
 <!-- about section -->
-<div id="about">
-	<div class="container">
+<div id="about" style="margin-top: 0;">
+	<div class="container zoom" style="background-color: #242526; border-radius: 0.2cm;">
 		<div class="row">
 			<div class="col-md-6 col-sm-12">
-				<img style="all: unset;" src="images/banner-img.png"  class="img-responsive" alt="about img">
+				<img style="all: unset; padding: 1cm; max-width:80%; height:auto;" src="images/WhatsApp Image 2020-11-03 at 13.15.00.jpeg"  class="img-responsive" alt="about img">
 			</div>
 			<div class="col-md-6 col-sm-12 about-des">
-				<h2>Wait, what?</h2>
-				<p>I'm an inquisitive, energetic budding computer science specialist skilled in leadership, with a strong foundation in math, logic, and cross-platform coding.</p>
-				<p>Throughout our lifetime, we introduce ourselves to hundreds of new people everywhere we go. Every time we strike up a conversation with a stranger sitting next to us on the train, duck into a gas station to ask for directions or step up to the checkout counter, we’re constantly coming up with new, creative ways to introduce ourselves in line with the circumstances. And we hardly ever realize we’re doing it :)</p>
-				<p>The best part about working with a startup is the exposure to digitally organised market and the way the industry looks for idealization.</p>
-				<a href="https://drive.google.com/file/d/1k7fBjJQFtYbuGui_T2lWC9An_2RkQCWb/view?usp=sharing" target="_blank" class="btn btn-default">This guy's good.</a>
+				<h2 style="padding-left: 1cm; padding-right: 1cm;">Smart Sign Boards</h2>
+				<p style="padding-left: 1cm; padding-right: 1cm; font-size: 16px;">The smart transportation ecosystem integrates multiple technology elements, such as software, hardware, and network elements and involves multiple vendors.
+					<br>
+				<a href="https://drive.google.com/drive/folders/1Tg5RP43M1_t4EE9gVe6QPCN1RxE2_3Nm?usp=sharing" target="_blank" class="btn btn-default">View Project ></a></p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+
+<div id="about" style="margin-top: 0;" >
+	<div class="container zoom" style="background-color: #242526;border-radius: 0.2cm">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img style="all: unset; padding: 1cm; max-width:80%;height: auto;" src="images/lost.JPG"  class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<h2 style="padding-left: 1cm; padding-right: 1cm;">Lost/Found Web App</h2>
+				<p style="padding-left: 1cm; padding-right: 1cm; font-size: 16px;">A web application built using HTML, CSS and JavaScript and the backend framework on PHP and MySQL.<br>
+					
+				<a href="https://prateeklostandfound.000webhostapp.com/" target="_blank" class="btn btn-default">View Project ></a></p>
 				
 			</div>
 			
@@ -109,70 +108,59 @@ box-shadow:         0px 0px 30px 0px rgba(8, 232, 0, 0.952);
 	
 </div>
 
-<!-- portfolio section -->
-<div id="">
-	<div class="container">
-		
-		<p><br>Ever since I was young, I have enjoyed dabbling with computers and experimenting with different applications. Because my own lifetime has essentially coincided with the rise of the modern computing industry. As an undergraduate, I found that I deeply enjoyed learning about programming and systems analysis, and with my strong mathematics background I performed very well in courses concerning calculus, statistics, and differential equations. </p>
-         
-         <div class="row mt30">            
-				<h1 style="color: gray;"><br><br>-Current Projects-</h1>
-				<h3><br>1.<a href="https://github.com/sujoyyyy/YetAnalyticsXAPI" target="_blank"> xAPI</a></h3>
-				<p>xAPI defines a query API that is used to get statements out of a Learning Record Store (LRS). This API is primarily designed for the transfer of statements between LRSs, though it can be used for simple reporting. It’s envisaged that for more complex queries and reporting, systems will fetch all relevant statements from the LRS and then store and aggregate them in an appropriate format for reporting.<br><br></p>
-				<a href="https://github.com/sujoyyyy/YetAnalyticsXAPI" target="_blank"><img src="images/try.png"></a>
-			    <p><br><br></p>
-				 
-				<h3><br>2.<a href="https://drive.google.com/drive/folders/1Tg5RP43M1_t4EE9gVe6QPCN1RxE2_3Nm?usp=sharing" target="_blank"> Accident prevention</a></h3>
-				<p>Local commuters, are generally used to the mobility issues. The major affected stakeholders
-					include, the tourists and occasional visitors. A proper safety technique needs to be developed
-					for them.
-					Thus, the product in thought or, the targeted problem has an avid requirement to be addressed.<br><br></p>
-				<a href="https://drive.google.com/drive/folders/1Tg5RP43M1_t4EE9gVe6QPCN1RxE2_3Nm?usp=sharing" target="_blank"><img src="images/mountain.JPG" alt="portfolio img"></a>
-		
-		         <p><br><br></p>
-			
-
-
-				 <h1 style="color: gray;"><br><br>-Finished Project(s)-</h1>
-				 <h3><br><a href="https://prateeklostandfound.000webhostapp.com/index.php" target="_blank">Lo/Fo(Lost-Found Website)</a></h3>
-				 <p>Don’t those emails about lost items or found items in the library or someone’s keys went missing in the cafeteria, bother you? Are the lost/found emails spamming your inboxes? Well, very appropriately addressed to, our web application stands on the resource allocation of database modelling to allude to the problems you face.<br>My roles :
-					<br>1. Content writing<br>
-					2. Custom Css handling<br>
-					3. Data table management<br><br></p>
-				<a href="https://prateeklostandfound.000webhostapp.com/index.php" target="_blank"><img src="images/lost.JPG" alt="portfolio img"></a>
-			
-				<h2><br><br><br>So? What's happening?</h2>
-			<p>Some users who reach landing pages can’t enter their information fast enough. Some may need or want a little boost before they commit. Maximum conversions in the first two groups rely on a user-centric landing page development strategy integrated into a company's overall search marketing effort</p>
-			<p>
-				I am currently working with a startup <strong>Zuperly</strong> and did a bit of web editing, and developed content for their landing page too.
-			</p><div class="col-md-12 col-sm-12">
-				<a rel="nofollow" href="http://www.Zuperly.com" target="blank" class="btn btn-default">Go to Zuperly.com</a>
-				<p><br><br></p>
+<div id="about" style="margin-top: 0;" >
+	<div class="container zoom" style="background-color: #242526;border-radius: 0.2cm">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img style="all: unset; padding: 1cm; max-width:80%; height:auto;" src="images/Capture-sugga (2).jpg"  class="img-responsive" alt="about img">
 			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<h2 style="padding-left: 1cm; padding-right: 1cm;">Machine Learning Algo</h2>
+				<p style="padding-left: 1cm; padding-right: 1cm; font-size: 16px;">Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed.
+					<br>
+				<a href="https://github.com/sujoyyyy/Machine-Learning" target="_blank" class="btn btn-default">View Project ></a></p>
+				
+			</div>
+			
+		</div>
 		
 	</div>
-</div>		
+	
+</div>
+
+
+<div id="about" style="margin-top: 0;" >
+	<div class="container zoom" style="background-color: #242526;border-radius: 0.2cm">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<img style="all: unset; padding: 1cm; max-width:80%; height:auto;" src="images/web-sc.JPG"  class="img-responsive" alt="about img">
+			</div>
+			<div class="col-md-6 col-sm-12 about-des">
+				<h2 style="padding-left: 1cm; padding-right: 1cm;">Web Scraping</h2>
+				<p style="padding-left: 1cm; padding-right: 1cm; font-size: 16px;">Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. The term typically refers to automated processes.
+					<br>
+				<a href="https://github.com/sujoyyyy/Website-Scraping-Template" target="_blank" class="btn btn-default">View Project ></a></p>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+</div>
+<div><p><br><br></p></div>
+
+
+
 
 <!-- footer section -->
 <footer>
 	<div class="container">
-	
-        
-			
-		
-				
 				<h2>Got ideas?<br></h2>
-				<p>Have you got a project in mind? Message me and let's get started!<p>
-
-
-				
+				<p>Have you got a project in mind? Message me and let's get started!<p>			
 					
-					<a rel="nofollow" href="http://t.me/sujoyyyy" target="blank" class="btn btn-default">Telegram</a>
-                    <a rel="nofollow" href="http://m.me/sujoy.datta.906" target="blank" class="btn btn-default">Messenger</a>
-				
-				
-			
-            
+					<a rel="nofollow" href="mailto:sujoydatta.2009@gmail.com" target="blank" class="btn btn-default">Email ></a>
+                    <a rel="nofollow" href="http://m.me/sujoy.datta.906" target="blank" class="btn btn-default">Messenger ></a>          
 	
 	</div>
 </footer>
