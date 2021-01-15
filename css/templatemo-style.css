@@ -382,7 +382,7 @@ footer a:hover {
 .social-icons li {
   display: inline-block;
   list-style: none;
-  background: #303030;
+  background: #000
   margin: 10px 0px 0px 0px;
 }
 .social-icons li a {
