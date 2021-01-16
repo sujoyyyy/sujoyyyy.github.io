@@ -6,23 +6,25 @@ body
 	{
 		background: #000;
     color: #fff;
-		font-family: 'Montserrat', sans-serif;
+    font-family: manrope,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue;
     font-weight: 400;
+    letter-spacing: .2px;
 	}
  
 @media (min-width: 768px) {
+
   .container {
-    width: 700px;
+    width: 600px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 900px;
+    width: 910px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1000px;
+    width: 1200px;
   }
 }
 
@@ -134,7 +136,7 @@ img {
 #home h1,
 #home h3 {
   line-height: 30px;
-  font-size: 3em;
+  font-size: 52px;
 }
 
 
