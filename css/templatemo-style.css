@@ -9,11 +9,7 @@ body
 		font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 	}
-  @media (max-width:629px) {
-    img {
-      display: none;
-    }
-  }
+ 
 @media (min-width: 768px) {
   .container {
     width: 700px;
@@ -44,14 +40,11 @@ h1,h2,h3,h4 {
   font-weight: bold;
 }
 
-h1,h2 {
-  font-size: 30px;
-}
-
 /* images retina */
 img {
   max-width: 100%;
   height: auto;
+
 }
 
 /* button section */
@@ -141,8 +134,9 @@ img {
 #home h1,
 #home h3 {
   line-height: 30px;
-  font-size: 40px;
+  font-size: 3em;
 }
+
 
 /* divider section */
 .divider {
@@ -368,36 +362,6 @@ footer a:hover {
   text-decoration: none;
 }
 
-/* copyright section */
-.copyright {
-	margin: 10px 0px;
-}
-.copyright p {
-  padding-top: 20px;
-}
-.social-icons {
-  padding: 0px;
-  margin: 0px;
-}
-.social-icons li {
-  display: inline-block;
-  list-style: none;
-  background: #000
-  margin: 10px 0px 0px 0px;
-}
-.social-icons li a {
-  color: #909090;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 10px 15px;
-  text-align: center;
-  transition: all 0.4s ease-in;
-  
-}
-.social-icons li a:hover {
-  background: #d54ab6;
-  color: #fff;
-}
 
 /* media 960 */
 @media ( max-width: 980px ) {
