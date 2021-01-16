@@ -6,7 +6,7 @@ body
 	{
 		background: #000;
     color: #fff;
-    font-family: manrope,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue;
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
     letter-spacing: .2px;
 	}
@@ -16,6 +16,7 @@ body
   .container {
     width: 600px;
   }
+
 }
 @media (min-width: 992px) {
   .container {
@@ -71,58 +72,7 @@ img {
 	padding: 8px 12px;
 }
 
-/* navigation */
 
-.navbar-default {
-    background: #202020;
-    border: none;
-    border-left: 6px solid #d54ab6;
-    padding-right: 40px;
-    margin: 0 !important;
-    position: relative;
-    top: 20px;
-  }
-.navbar-default .navbar-brand {
-    font-size: 40px;
-    line-height: 40px;
-    padding-top: 4px;
-   }
-.navbar-default .navbar-nav li a {
-  color: #f2f2f2;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 40px;
-  transition: all 0.4s ease-in;
- }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #ffa500;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  	color: #ffa500;
-  	background-color: transparent;
-}
-.navbar-default .navbar-toggle {
-  	background: #d54ab6;
-  	border-radius: 0px;
-   	border: none;
-   	margin-top: 20px;
-   	margin-bottom: 30px;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background: #fff;
-    border-color: transparent;
-}
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus { 
-  background-color: transparent 
-}
-
-.active {
-	background: #333;
-}
 
 /* home section */
 #home {
@@ -130,7 +80,7 @@ img {
   background-size: cover;
   background-position: center;
   min-height: 500px;
-  padding-top: 180px;
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 #home h1,
@@ -139,42 +89,8 @@ img {
   font-size: 52px;
 }
 
-
-/* divider section */
-.divider {
-  color: #fff;
-  text-align: center;
-}
-.divider .fa {
-  border: 2px solid #fff;
-  border-radius: 50%;
-  font-size: 32px;
-  width: 80px;
-  height: 80px;
-  line-height: 76px;
-  text-transform: capitalize;
-}
-.divider h2 {
-  padding-bottom: 4px;
-}
-.divider .divider-wrapper {
-  padding: 40px 20px 40px 20px;
-  position: relative;
-  bottom: 40px;
-  transition: all 0.4s ease-in;
-}
-.divider .divider-wrapper:hover {
-  bottom: 60px;
-  cursor: pointer;
-}
-.divider .divider-one {
-  background: #c14000;
-}
-.divider .divider-two {
-  background: #009988;
-}
-.divider .divider-three {
-  background: #ffa500;
+#home p{
+  font-size: 18.75px;
 }
 
 /* about section */
@@ -197,11 +113,13 @@ img {
 }
 #about .about-des {
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 1px;
+  text-justify: auto;
 }
 #about .btn {
   margin-top: 30px;
+  font-size: 18px;
 }
 
 
