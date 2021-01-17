@@ -81,7 +81,7 @@ img {
 /* button section */
 .btn {
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000;
   border-radius: 0.2px;
   box-shadow: none;
   color: #fff;
