@@ -1309,25 +1309,46 @@ html:not(.js) .reel { overflow-x: auto; }
 .case__logo--meesho { height: 22px; }
 .case__logo--unischolars { height: 19px; }
 
-/* Phones: one clear path through the first screen */
+/* Phones: no top bar (the hero is the header), smaller type, more air */
 @media (max-width: 600px) {
-	.bar__menu { border-color: transparent; padding: 0 10px; }
+	:root { --bar-h: 0px; }
+	.bar { display: none; }
 
-	.hero__lede { margin-top: 16px; font-size: 1.125rem; }
-	.hero__actions { margin-top: 26px; }
-	/* The header keeps a Resume button on screen, so the hero leads with one action. */
-	.hero__actions .btn--ghost { display: none; }
+	.hero,
+	.is-webgl .hero { padding-top: 64px; }
+	.hero__title { font-size: 2.375rem; letter-spacing: -0.03em; }
+	.hero__lede { margin-top: 18px; max-width: 30ch; font-size: 1.0625rem; line-height: 1.5; }
 
-	.creds { flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 26px; }
-	.cred { padding: 0; border: 0; background: none; }
+	.hero__actions { align-items: center; gap: 8px 20px; margin-top: 32px; }
+	.hero__actions .btn { height: 46px; font-size: 0.9375rem; }
+	.hero__actions .btn--primary { padding: 0 18px; }
+	/* Resume rides beside the main action as a quiet link. */
+	.hero__actions .btn--ghost {
+		padding: 0 2px;
+		border: 0;
+		background: none;
+		gap: 6px;
+		text-decoration: underline;
+		text-decoration-color: var(--line-strong);
+		text-underline-offset: 4px;
+	}
+	.hero__actions .btn--ghost .ico { width: 15px; height: 15px; }
+	.hide-sm { display: none; }
+
+	.creds { flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 40px; }
+	.cred { padding: 0; border: 0; background: none; font-size: 0.875rem; }
 	a.cred span { text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
 	.cred__more { display: none; }
 
-	.shipped { gap: 12px; margin-top: 26px; }
-	.shipped p { font-size: 0.875rem; }
-	.logos { flex-wrap: nowrap; gap: 14px; }
-	.logos .logo--gushwork { height: 19px; }
+	.shipped { gap: 12px; margin-top: 36px; }
+	.shipped p { font-size: 0.8125rem; }
+	.logos { flex-wrap: nowrap; gap: 16px; }
+	.logos .logo--gushwork { height: 17px; }
 	.logos .logo--toddle,
-	.logos .logo--hike { height: 23px; }
-	.logos .logo--raaho { height: 18px; }
+	.logos .logo--hike { height: 21px; }
+	.logos .logo--raaho { height: 16px; }
+}
+@media (max-width: 374px) {
+	.hero__actions { column-gap: 14px; }
+	.hero__actions .btn--primary { padding: 0 14px; gap: 7px; }
 }
