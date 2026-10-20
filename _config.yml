@@ -1,0 +1,12 @@
+# GitHub Pages builds with Jekyll; keep working files off the public site.
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
+  - pictures
+  - "*.zip"
+  - "(1) Sujoy Datta _ LinkedIn.pdf"
+  - package.json
+  - package-lock.json
+  - vite.config.js
+  - node_modules
+  - index.php

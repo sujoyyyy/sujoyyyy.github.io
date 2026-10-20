@@ -1,0 +1,15 @@
+.DS_Store
+# Source photos and exports: the site ships compressed copies in images/life/
+pictures/
+*.zip
+(1) Sujoy Datta _ LinkedIn.pdf
+.impeccable/review/
+# Raw photo exports in the repo root (may show screens or private details)
+/*.jpeg
+/*.jpg
+# Working notes and design records stay local: the repo itself is public
+PRODUCT.md
+DESIGN.md
+.impeccable/
+*.webp.json
+LinkedIn Profile.pdf
