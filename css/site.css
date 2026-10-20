@@ -450,8 +450,11 @@ a.cred:hover { border-color: var(--line-strong); }
 }
 
 /* Portrait: the track gets its own space under the intro and scrolls with it. */
+/* Stacked layouts: the track gets a stage of its own between the intro and the proof. */
+.hero__stage { display: none; }
 @media (max-aspect-ratio: 1/1), (max-width: 1099px) {
-	.is-webgl .hero { align-items: flex-start; padding-top: 36px; padding-bottom: 62svh; }
+	.is-webgl .hero { align-items: flex-start; padding-top: 36px; padding-bottom: 72px; }
+	.is-webgl .hero__stage { display: block; align-self: stretch; height: 62svh; }
 }
 
 @media (max-width: 760px) {

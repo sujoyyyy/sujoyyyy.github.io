@@ -140,12 +140,12 @@ async function startTrack() {
 	});
 
 	const hero = document.querySelector('.hero');
-	const heroText = hero.querySelector('.hero__in');
+	const stage = hero.querySelector('.hero__stage');
 
-	// On portrait screens the track sits in the space under the intro.
+	// On stacked layouts the track is centred on its stage, between the intro and the proof.
 	const placeAnchor = () => {
-		const textBottom = heroText.getBoundingClientRect().bottom + window.scrollY;
-		scene.setAnchor(textBottom + window.innerHeight * 0.3);
+		const r = stage.getBoundingClientRect();
+		scene.setAnchor(r.top + window.scrollY + r.height / 2);
 	};
 	const followHero = () => {
 		const y = Math.min(window.scrollY, hero.offsetHeight);
@@ -154,6 +154,8 @@ async function startTrack() {
 	placeAnchor();
 	followHero();
 	window.addEventListener('resize', placeAnchor);
+	// Web fonts and images can reflow the intro after load; keep the anchor on the stage.
+	new ResizeObserver(placeAnchor).observe(hero);
 	window.addEventListener('scroll', followHero, { passive: true });
 
 	new IntersectionObserver(([entry]) => scene.setVisible(entry.isIntersecting)).observe(hero);
