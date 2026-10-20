@@ -1308,3 +1308,26 @@ html:not(.js) .reel { overflow-x: auto; }
 .case__logo--shipyaari { height: 30px; }
 .case__logo--meesho { height: 22px; }
 .case__logo--unischolars { height: 19px; }
+
+/* Phones: one clear path through the first screen */
+@media (max-width: 600px) {
+	.bar__menu { border-color: transparent; padding: 0 10px; }
+
+	.hero__lede { margin-top: 16px; font-size: 1.125rem; }
+	.hero__actions { margin-top: 26px; }
+	/* The header keeps a Resume button on screen, so the hero leads with one action. */
+	.hero__actions .btn--ghost { display: none; }
+
+	.creds { flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 26px; }
+	.cred { padding: 0; border: 0; background: none; }
+	a.cred span { text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 3px; }
+	.cred__more { display: none; }
+
+	.shipped { gap: 12px; margin-top: 26px; }
+	.shipped p { font-size: 0.875rem; }
+	.logos { flex-wrap: nowrap; gap: 14px; }
+	.logos .logo--gushwork { height: 19px; }
+	.logos .logo--toddle,
+	.logos .logo--hike { height: 23px; }
+	.logos .logo--raaho { height: 18px; }
+}
